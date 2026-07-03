@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quantum Future</title>
+
+      <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+
+    <style>
+
+        body {
+             background-color: #b8b8b8;
+            color: #222;
+            margin: 0;
+        }
+
+        .future-box {
+            background-color: #ffffff;
+            border: 1px solid #bcdffb;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .future-box:hover {
+            background-color: #f0fbff;
+            border: 1px solid #5dade2;
+        }
+
+        img {
+            border: 1px solid #a8e6cf;
+            padding: 5px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        a {
+            color: #2c3e50;
+            border: 1px solid #bcdffb;
+            padding: 8px;
+            margin: 20px;
+            background-color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #dff5ff;
+        }
+
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+<div class="future-box">
+    <h1>Future of Quantum Computing</h1>
+    <p>
+        Quantum computing will transform industries like healthcare,
+        cybersecurity, and AI.
+    </p>
+</div>
+
+<div class="future-box">
+    <h2>Applications</h2>
+    <ul>
+        <li>Drug discovery</li>
+        <li>Artificial Intelligence</li>
+        <li>Climate research</li>
+        <li>Finance modeling</li>
+    </ul>
+
+    <img src="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/01/quantum-10023701_1280.jpg" width="300">
+</div>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>

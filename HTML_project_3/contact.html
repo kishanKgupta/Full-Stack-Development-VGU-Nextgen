@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechPulse News | Contact</title>
+      <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body oncontextmenu="return false;">
+
+<header>
+    <h1>Contact TechPulse News</h1>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">Latest News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+</header>
+
+<main>
+
+    <h2>Get in Touch</h2>
+
+    <p>
+        We would love to hear from you.
+        <em>Feel free to contact us anytime.</em>
+    </p>
+
+    <h3>Contact Details</h3>
+
+    <p>
+        Email:
+        <a href="mailto:techpulsenews@example.com">
+            MY EMAIL
+        </a>
+    </p>
+
+    <p>
+        Phone:
+        <a href="tel:+915176543210">
+            +91 51765 43210
+        </a>
+    </p>
+
+    <h3>Follow Us</h3>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/">instagram</a>
+    <a href="https://www.facebook.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNuSKWwtjd6Ml81mVgzaUZCagFmdEvNuDpdg&s" alt="fb" width="30px" height="30px"></a>
+
+</main>
+
+<footer>
+    <hr>
+    <p><small>© 2026 TechPulse News</small></p>
+</footer>
+
+</body>
+</html>

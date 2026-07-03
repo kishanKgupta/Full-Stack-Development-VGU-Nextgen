@@ -1,0 +1,102 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    background-color: rgb(2, 73, 2);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Search */
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Card */
+.card {
+    width: 220px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 15px;
+    padding: 10px;
+     display: inline-block;
+
+    /*transition: transform 0.3s; */
+}
+
+/* Hover Zoom */
+ .card:hover {
+    /* transform: scale(1.08); */
+    background-color: rgb(242, 237, 230);
+} 
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* Title */
+.card h3 {
+    color: green;
+}
+
+/* Price */
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+/* Rating */
+.rating {
+    color: orange;
+}
+
+/* Buttons */
+.btn {
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    color: white;
+}
+
+.buy {
+    background-color: green;
+}
+
+.cart {
+    background-color: orange;
+}
+
+/* Button Hover */
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

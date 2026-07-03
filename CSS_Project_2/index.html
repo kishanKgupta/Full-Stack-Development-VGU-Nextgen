@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Universe Knowledge</title>
+
+   <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#000814;
+    color:white;
+    margin:0;
+}
+
+/* Header */
+
+header{
+    background:#001d3d;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    color:#00b4d8;
+}
+
+/* Navigation */
+
+nav{
+    background:#003566;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#00b4d8;
+}
+
+/* Content Section */
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.card{
+    background:#001d3d;
+    margin:40px 0;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.card img{
+    width:400px;
+    border-radius:10px;
+    margin:15px 0;
+}
+
+.card h2{
+    color:#00b4d8;
+}
+
+/* Footer */
+
+footer{
+    background:#001d3d;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body oncontextmenu="return false;">
+
+<header>
+<h1>🌌 Universe Knowledge</h1>
+<p>Explore the Amazing Universe</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#solar">Solar System</a>
+<a href="#galaxy">Galaxy</a>
+<a href="#blackhole">Black Hole</a>
+<a href="#nebula">Nebula</a>
+</nav>
+
+<div class="container">
+
+<!-- Solar System -->
+
+<div class="card" id="solar">
+
+<h2>Solar System</h2>
+
+<img src="https://images.unsplash.com/photo-1711560217836-f42ac4a11a4f?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+<p>
+The Solar System consists of the Sun and all the objects that move around it.
+There are eight planets including Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
+Earth is the only known planet where life exists.
+</p>
+
+</div>
+
+<!-- Galaxy -->
+
+<div class="card" id="galaxy">
+
+<h2>Galaxy</h2>
+
+<img src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+<p>
+A galaxy is a huge collection of stars, gas, dust, and planets held together by gravity.
+Our galaxy is called the Milky Way.
+Scientists believe there are billions of galaxies in the universe.
+</p>
+
+</div>
+
+<!-- Black Hole -->
+
+<div class="card" id="blackhole">
+
+<h2>Black Hole</h2>
+
+<img src="https://images.unsplash.com/photo-1640984756059-7303641db7cd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+<p>
+A black hole is a place in space where gravity is extremely strong.
+Nothing can escape from it, not even light.
+Black holes are formed when massive stars collapse at the end of their life cycle.
+</p>
+
+</div>
+
+<!-- Nebula -->
+
+<div class="card" id="nebula">
+
+<h2>Nebula</h2>
+
+<img src="https://images.unsplash.com/photo-1610296669228-602fa827fc1f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+<p>
+A nebula is a giant cloud of gas and dust in space.
+Many new stars are born inside nebulae.
+They are some of the most colorful and beautiful objects in the universe.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+<p>Universe Knowledge Project</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+
+        <form id="registrationForm">
+            
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+            <span id="nameError"></span>
+
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <span id="emailError"></span>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <span id="passwordError"></span>
+
+            <label>Mobile Number</label>
+            <input type="text" id="mobile" placeholder="Enter mobile number">
+            <span id="mobileError"></span>
+
+            <label>Gender</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <span id="genderError"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="successMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

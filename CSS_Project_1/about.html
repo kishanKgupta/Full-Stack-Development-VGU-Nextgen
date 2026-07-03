@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quantum Concepts</title>
+      <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+
+    <style>
+
+        body {
+            background-color: #b8b8b8;
+            color: #222;
+            margin: 0;
+        }
+
+        .box {
+            background-color: #f4fff7;
+            border: 1px solid #a8e6cf;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box:hover {
+            background-color: #e6fff2;
+            border: 1px solid #58d68d;
+        }
+
+        img {
+            border: 1px solid #bcdffb;
+            padding: 5px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        a {
+            color: #2c3e50;
+            border: 1px solid #bcdffb;
+            padding: 8px;
+            margin: 20px;
+            background-color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #dff5ff;
+        }
+
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+<div class="box">
+    <h1>Quantum Concepts</h1>
+    <p>Quantum computing is based on physics principles.</p>
+</div>
+
+<div class="box">
+    <h2>Superposition</h2>
+    <p>A qubit can exist in multiple states at once.</p>
+</div>
+
+<div class="box">
+    <h2>Entanglement</h2>
+    <p>Qubits are connected and affect each other instantly.</p>
+
+    <img src="https://caltechsites-prod-assets.resources.caltech.edu/scienceexchange/images/Entanglement-M.2e16d0ba.fill-1866x1050-c100.format-avif.avif" width="300">
+</div>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box {
+    margin: 20px auto;
+    padding: 20px;
+    width: 200px;
+    background-color: lightblue;
+    border-radius: 5px;
+}

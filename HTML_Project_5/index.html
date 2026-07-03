@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+       <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body oncontextmenu="return false;">
+
+    <h1 align="center"><mark>Student Data Collection Form</mark></h1>
+    <p align="center">
+        <b>Please fill all the details carefully.</b> 
+        <i>All fields are mandatory.</i> 
+        <u>Make sure information is correct.</u>
+    </p>
+
+    <hr>
+
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="60">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend><b>Academic Information</b></legend>
+
+            <label>Branch:</label>
+            <input type="radio" id="bca" name="branch" value="BCA">
+            <label for="bca">BCA</label>
+
+            <input type="radio" id="btech" name="branch" value="BTech">
+            <label for="btech">B.Tech</label>
+            <br><br>
+
+            <label>Skills:</label>
+            <input type="checkbox" id="html" name="skill" value="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skill" value="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="skill" value="js">
+            <label for="js">JavaScript</label>
+
+            <input type="checkbox" id="python" name="skill" value="python">
+            <label for="python">Python</label>
+            <br><br>
+
+            <label for="year">Select Year:</label>
+            <select id="year" name="year">
+                <option value="">--Select Year--</option>
+                <option value="1st">1st Year</option>
+                <option value="2nd">2nd Year</option>
+                <option value="3rd">3rd Year</option>
+                <option value="4th">4th Year</option>
+            </select>
+            <br><br>
+
+            <label for="portfolio">Portfolio URL:</label>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com">
+            <br><br>
+
+            <label for="studytime">Study Time:</label>
+            <input type="time" id="studytime" name="studytime">
+            <br><br>
+
+            <label for="week">Preferred Week:</label>
+            <input type="week" id="week" name="week">
+            <br><br>
+
+            <label for="month">Preferred Month:</label>
+            <input type="month" id="month" name="month">
+            <br><br>
+
+            <label for="admission">Date & Time of Admission:</label>
+            <input type="datetime-local" id="admission" name="admission">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Feedback Section -->
+        <fieldset>
+            <legend><b>Feedback Section</b></legend>
+
+            <label for="rating">Rate Your HTML Knowledge (0-10):</label>
+            <input type="range" id="rating" name="rating" min="0" max="10">
+            <br><br>
+
+            <label for="message">Write Your Feedback:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your feedback here..."></textarea>
+            <br><br>
+
+            <p>
+                <mark>Note:</mark> 
+                <small>Range is between 0 to 10.</small>
+            </p>
+
+        </fieldset>
+
+        <br><br>
+
+        <center>
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </center>
+
+    </form>
+
+    <hr>
+
+    <p align="center">
+        <strong>Thank you for registering!</strong> 
+        <em>We will contact you soon.</em>
+    </p>
+
+</body>
+</html>

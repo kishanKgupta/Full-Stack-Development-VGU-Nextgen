@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechPulse News | Home</title>
+
+     <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body oncontextmenu="return false;">
+
+<header>
+    <h1>TechPulse News</h1>
+    <p><strong>Latest Technology News Platform</strong></p>
+    <img src="unnamed.jpg" alt="tech news" width="600px" height="250px">
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">Latest News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+</header>
+
+<main>
+    <h2>Welcome to TechPulse News</h2>
+
+    <p>
+        <b>TechPulse News</b> brings you <mark>trusted</mark> and
+        <em>updated</em> technology news from around the world.
+    </p>
+
+    <p>
+        We cover topics like <u>Artificial Intelligence</u>,
+        Mobile Technology, Space Science and Cyber Security.
+    </p>
+
+    <hr>
+
+    <h3>Explore News Categories</h3>
+    <ol>
+        <li>AI News</li>
+        <li>Mobile Technology</li>
+        <li>Space & Science</li>
+        <li>Cyber Security</li>
+    </ol>
+
+    <p>
+        <a href="news.html">Click here to read latest tech news</a>
+    </p>
+</main>
+
+<footer>
+    <hr>
+    <p><small>© 2026 TechPulse News</small></p>
+</footer>
+
+</body>
+</html>

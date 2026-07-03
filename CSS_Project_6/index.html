@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Jaipur</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8f4ef;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .hero {
+      min-height: 85vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Hawa_Mahal%2C_Jaipur%2C_India.jpg") center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 60px 50px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffd166;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .hero-content {
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 70px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+
+    .hero-content p {
+      font-size: 1.05rem;
+      color: #f1f1f1;
+    }
+
+    .hero-content button {
+      width: fit-content;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      background: #c1121f;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 60px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #8d3b16;
+      margin-bottom: 12px;
+    }
+
+    .section-text {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 35px;
+      color: #555;
+    }
+
+    .places {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 320px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      display: flex;
+      flex-direction: column;
+      /* transition: transform 0.3s ease; */
+    }
+
+    /* .card:hover {
+      transform: translateY(-8px);
+    } */
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 1;
+    }
+
+    .card-content h3 {
+      color: #b23a48;
+      font-size: 1.35rem;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .about {
+      background: #fff1e6;
+    }
+
+    .about-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .about-text h2 {
+      color: #8d3b16;
+      font-size: 2rem;
+    }
+
+    .about-image {
+      flex: 1 1 400px;
+    }
+
+    .about-image img {
+      height: 320px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .tips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .tip-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      flex: 1 1 220px;
+      max-width: 260px;
+      text-align: center;
+    }
+
+    .tip-box h4 {
+      color: #8d3b16;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background: #4a2c2a;
+      color: #f5e6d3;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    .footer p {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 992px) {
+      .hero,
+      .section {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 18px 20px 35px;
+      }
+
+      .section {
+        padding: 40px 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 360px;
+      }
+
+      .about-image img {
+        height: 240px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Explore Jaipur</div>
+      <div class="nav-links">
+        <a href="#places">Places</a>
+        <a href="#about">About</a>
+        <a href="#tips">Tips</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Discover the Royal Beauty of Jaipur</h1>
+      <p>
+        Jaipur, the Pink City, is famous for its forts, palaces, lakes, and royal heritage.
+        Explore some of the most beautiful tourist places in Jaipur.
+      </p>
+      <button>Plan Your Visit</button>
+    </div>
+  </header>
+
+  <section class="section" id="places">
+    <h2 class="section-title">Top Tourist Places in Jaipur</h2>
+    <p class="section-text">
+      Real Jaipur landmarks with authentic place images.
+    </p>
+
+    <div class="places">
+      <div class="card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hawa_Mahal%2C_Jaipur%2C_India.jpg" alt="Hawa Mahal Jaipur">
+        <div class="card-content">
+          <h3>Hawa Mahal</h3>
+          <p>One of Jaipur’s most famous monuments, known for its pink sandstone facade and many small windows.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur_03-2016_05_Amber_Fort.jpg" alt="Amber Fort Jaipur">
+        <div class="card-content">
+          <h3>Amber Fort</h3>
+          <p>A grand fort near Jaipur known for its historic architecture, courtyards, and royal design.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Courtyard_city_palace%2C_Jaipur.jpg" alt="City Palace Jaipur">
+        <div class="card-content">
+          <h3>City Palace</h3>
+          <p>A beautiful palace complex in Jaipur that reflects royal history, art, and traditional architecture.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jal_Mahal_-_Jaipur_-_India.jpg" alt="Jal Mahal Jaipur">
+        <div class="card-content">
+          <h3>Jal Mahal</h3>
+          <p>A stunning water palace located in Man Sagar Lake, surrounded by scenic views and hills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="about-flex">
+      <div class="about-text">
+        <h2>Why Visit Jaipur?</h2>
+        <p>
+          Jaipur is one of India’s most popular heritage cities. It is known for royal forts,
+          palaces, colorful markets, and rich culture.
+        </p>
+        <p>
+          The city gives a perfect mix of history, architecture, and traditional Rajasthani beauty.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jal_Mahal_in_Man_Sagar_Lake.jpg" alt="Jal Mahal in Man Sagar Lake Jaipur">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tips">
+    <h2 class="section-title">Travel Tips</h2>
+    <p class="section-text">Useful tips before you visit Jaipur.</p>
+
+    <div class="tips">
+      <div class="tip-box">
+        <h4>Best Time</h4>
+        <p>Visit in cooler months for a better sightseeing experience.</p>
+      </div>
+      <div class="tip-box">
+        <h4>Photography</h4>
+        <p>Early morning and evening are great for taking beautiful palace and fort photos.</p>
+      </div>
+      <div class="tip-box">
+        <h4>Local Food</h4>
+        <p>Try famous Jaipur snacks, sweets, and traditional Rajasthani dishes.</p>
+      </div>
+      <div class="tip-box">
+        <h4>Shopping</h4>
+        <p>Explore local markets for handicrafts, textiles, and jewelry.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Explore Jaipur Tourism Webpage</p>
+    <p>Made with HTML, CSS, and Flexbox</p>
+  </footer>
+
+</body>
+</html>

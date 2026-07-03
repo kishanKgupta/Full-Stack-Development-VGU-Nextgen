@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2 id="heading">JavaScript Events Demo</h2>
+
+        <!-- Click Event -->
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+
+        <!-- Hover Event -->
+        <div class="box" onmouseover="hoverIn()" onmouseout="hoverOut()">
+            Hover
+        </div>
+
+        <!-- Input Event -->
+        <input type="text" id="nameInput" placeholder="Type your name" onkeyup="displayName()">
+        <p id="output"></p>
+
+        <!-- Double Click Event -->
+        <button ondblclick="changeBackground()">Double Click Me</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

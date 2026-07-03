@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Booking</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body oncontextmenu="return false;">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>CarRental</h1>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Book Your Dream Car</h2>
+        <p>Luxury | Comfort | Affordable</p>
+        <button>Book Now</button>
+    </div>
+
+    <!-- Car Section -->
+    <div class="cars">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" width="100%">
+            <h3>BMW</h3>
+            <p>₹5000 / day</p>
+            <button>Book</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1493238792000-8113da705763" width="100%">
+            <h3>Audi</h3>
+            <p>₹4500 / day</p>
+            <button>Book</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" width="100%">
+            <h3>Mercedes</h3>
+            <p>₹6000 / day</p>
+            <button>Book</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d" width="100%">
+            <h3>Fortuner</h3>
+            <p>₹4000 / day</p>
+            <button>Book</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" width="100%">
+            <h3>Mustang</h3>
+            <p>₹7000 / day</p>
+            <button>Book</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd" width="100%">
+            <h3>Thar</h3>
+            <p>₹3500 / day</p>
+            <button>Book</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def" width="100%">
+            <h3>Creta</h3>
+            <p>₹3000 / day</p>
+            <button>Book</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf" width="100%">
+            <h3>Swift</h3>
+            <p>₹2000 / day</p>
+            <button>Book</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 CarRental | All Rights Reserved</p>
+        <p>Contact: carrental@email.com</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 10px gray;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    background: url("https://images.unsplash.com/photo-1502877338535-766e1452684a");
+    background-size: cover;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.hero button:hover {
+    background: red;
+}
+
+/* Car Section */
+.cars {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Card */
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    background: white;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 10px gray;
+    padding: 10px;
+}
+
+/* Hover Effect */
+.card:hover {
+    box-shadow: 0 8px 20px black;
+}
+
+/* Button */
+.card button {
+    padding: 8px 15px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.card button:hover {
+    background: orange;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 10px gray;
+}
+.card img {
+    height: 150px;
+    width: 100%;
+    border: 1px solid lightgray;
+}

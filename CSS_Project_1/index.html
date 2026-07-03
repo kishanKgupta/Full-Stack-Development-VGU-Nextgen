@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quantum Computing - Home</title>
+      <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+
+    <style>
+
+        body {
+            background-color: #b8b8b8;
+            color: #222;
+            margin: 0;
+        }
+
+        .header {
+            background-color: #ffffff;
+            border-bottom: 2px solid #bcdffb;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #f4fff7;
+            border: 1px solid #a8e6cf;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: #2c3e50;
+            border: 1px solid #bcdffb;
+            padding: 8px;
+            margin: 10px;
+            background-color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #dff5ff;
+            border: 1px solid #5dade2;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border: 1px solid #bcdffb;
+            padding: 20px;
+            margin: 15px;
+        }
+
+        .section:hover {
+            background-color: #f0fbff;
+            border: 1px solid #5dade2;
+        }
+
+        img {
+            border: 1px solid #a8e6cf;
+            padding: 5px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            border-top: 1px solid #bcdffb;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+<div class="header">
+    <h1>Quantum Computing</h1>
+    <p>Future Technology with Modern Design</p>
+</div>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">Concepts</a>
+    <a href="future.html">Future</a>
+</div>
+
+<div class="section">
+    <h2>Introduction</h2>
+    <p>
+        Quantum computing is a powerful technology that uses quantum physics
+        to perform calculations faster than classical computers.
+    </p>
+
+    <img src="https://quantumai.google/static/site-assets/images/marketing/quantum-computing/hero-heading.jpg" width="300">
+</div>
+
+<div class="section">
+    <h2>Importance</h2>
+    <p>
+        It helps solve complex problems in AI, science, and medicine.
+        Many big companies are investing in quantum research.
+    </p>
+</div>
+
+<div class="footer">
+    <p>Quantum Project</p>
+</div>
+
+</body>
+</html>

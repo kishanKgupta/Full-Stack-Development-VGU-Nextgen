@@ -1,0 +1,203 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background: #003366;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #003366, #0055aa);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.btn {
+    background: white;
+    color: #003366;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.light {
+    background: #f4f4f4;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== TECHNOLOGIES ===== */
+.tech-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    background: #003366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+/* ===== PROJECT TABLES (NEW) ===== */
+.project-table {
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.project-table h3 {
+    margin: 30px 0 10px;
+    color: #003366;
+    text-align: center;
+}
+
+.project-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background: white;
+}
+
+.project-table table,
+.project-table th,
+.project-table td {
+    border: 1px solid #003366;
+}
+
+.project-table th {
+    background: #003366;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.project-table td {
+    padding: 12px;
+}
+
+.project-table td a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-table td a:hover {
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #003366;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Table responsive text */
+    .project-table table,
+    .project-table th,
+    .project-table td {
+        font-size: 14px;
+    }
+}
